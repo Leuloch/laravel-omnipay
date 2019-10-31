@@ -88,7 +88,7 @@ $cardInput = [
 
 $card = Omnipay::creditCard($cardInput);
 $response = Omnipay::purchase([
-	'amount'    => '100.00',
+	'amount'    => '100.00', // remember always using dot only for decimals separator...
 	'returnUrl' => 'http://bobjones.com/payment/return',
 	'cancelUrl' => 'http://bobjones.com/payment/cancel',
 	'card'      => $cardInput
